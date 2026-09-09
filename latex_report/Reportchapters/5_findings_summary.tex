@@ -1,0 +1,104 @@
+\chapter{Findings Summary}
+
+\section{Overview}
+
+This chapter provides a high-level summary of the 89 vulnerabilities identified during the penetration test, including their severity and CVE references. 
+\\
+
+The purpose of this chapter is to present the key results of the assessment before the individual vulnerabilities are examined in greater technical detail.
+
+\section{Findings}
+
+\begin{longtable}{|l|p{5cm}|l|l|p{3cm}|}
+\hline
+\textbf{ID} & \textbf{Finding} & \textbf{Severity} & \textbf{CVE} & \textbf{Affected Asset} \\ \hline
+F-001 & Sensitive Information Exposure in Public Web Root & 8.6 HIGH & N/A & Web App exposed by Apache2 HTTP Web Server \\ \hline
+F-002 & Local File Inclusion (LFI) via Path Traversal & 8.6 HIGH & N/A & randylogs.php \\ \hline
+F-003 & Log Poisoning via Unsanitized SFTP Authentication Input & 9.3 CRITICAL & N/A & SFTP and /var/log/auth.log \\ \hline
+F-004 & Insecure Local Permissions on Backup Artifacts & 5.3 MEDIUM & N/A & user\_backup.zip file \\ \hline
+F-005 & Weak Password Architecture on Backup Archives & 7.8 HIGH & N/A & user\_backup.zip file \\ \hline
+F-006 & Local Privilege Escalation via SUID Binary Search Path Hijacking & 8.8 HIGH & N/A & easysysinfo executable \\ \hline
+F-007 & HTTP Request Splitting / Smuggling with mod\_rewrite and mod\_proxy & 9.8 CRITICAL & CVE-2023-25690 & Apache2 HTTP Web Server \\ \hline
+F-008 & mod\_proxy\_uwsgi HTTP Response Splitting & 7.5 HIGH & CVE-2023-27522 & Apache2 HTTP Web Server \\ \hline
+F-009 & WebSocket Protocol Upgrade Null Pointer Dereference & 5.4 MEDIUM & CVE-2024-36387 & Apache2 HTTP Web Server \\ \hline
+F-010 & SSRF in Apache HTTP Server on Windows NTLM Hash Leakage & 7.5 HIGH & CVE-2024-38472 & Apache2 HTTP Web Server\\ \hline
+F-011 & mod\_proxy Request URL Encoding Authentication Bypass & 8.1 HIGH & CVE-2024-38473 & Apache2 HTTP Web Server\\ \hline
+F-012 & mod\_rewrite Substitution Encoding Script Execution / Source Disclosure & 9.8 CRITICAL & CVE-2024-38474 & Apache2 HTTP Web Server\\ \hline
+F-013 & mod\_rewrite Output Escaping File Mapping Vulnerability & 9.1 CRITICAL & CVE-2024-38475 & Apache2 HTTP Web Server\\ \hline
+F-014 & Core Information Disclosure / SSRF / Script Execution & 9.8 CRITICAL & CVE-2024-38476 & Apache2 HTTP Web Server\\ \hline
+F-015 & mod\_proxy Null Pointer Dereference Denial of Service & 7.5 HIGH & CVE-2024-38477 & Apache2 HTTP Web Server\\ \hline
+F-016 & mod\_rewrite Potential SSRF via mod\_proxy & 7.5 HIGH & CVE-2024-39573 & Apache2 HTTP Web Server\\ \hline
+F-017 & HTTP/2 Protocol Double Free and Remote Code Execution & 8.8 HIGH & CVE-2026-23918 & Apache2 HTTP Web Server\\ \hline
+F-018 & Local .htaccess Authors Escalation of Privilege & 8.8 HIGH & CVE-2026-24072 & Apache2 HTTP Web Server\\ \hline
+F-019 & mod\_proxy\_ajp Heap-based Buffer Overflow & 9.8 CRITICAL & CVE-2026-28780 & Apache2 HTTP Web Server\\ \hline
+F-020 & mod\_md Resource Allocation Without Limits via OCSP & 7.3 HIGH & CVE-2026-29168 & Apache2 HTTP Web Server\\ \hline
+F-021 & mod\_dav\_lock NULL Pointer Dereference & 7.5 HIGH & CVE-2026-29169 & Apache2 HTTP Web Server\\ \hline
+F-022 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-33006) & 4.8 MEDIUM & CVE-2026-33006 & Apache2 HTTP Web Server\\ \hline
+F-023 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-33007) & 5.3 MEDIUM & CVE-2026-33007 & Apache2 HTTP Web Server\\ \hline
+F-024 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-33523) & 6.5 MEDIUM & CVE-2026-33523 & Apache2 HTTP Web Server\\ \hline
+F-025 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-33857) & 5.3 MEDIUM & CVE-2026-33857 & Apache2 HTTP Web Server\\ \hline
+F-026 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-34032) & 5.3 MEDIUM & CVE-2026-34032 & Apache2 HTTP Web Server\\ \hline
+F-027 & Apache 2.4.x $<$ 2.4.67 Vulnerability (CVE-2026-34059) & 7.5 HIGH & CVE-2026-34059 & Apache2 HTTP Web Server\\ \hline
+F-028 & mod\_proxy\_wstunnel and mod\_proxy\_http Upgradable Protocols Negotiation & 5.3 MEDIUM & CVE-2019-17567 & Apache2 HTTP Web Server \\ \hline
+F-029 & Windows Local Process Stopping Vulnerability & 5.5 MEDIUM & CVE-2020-13938 & Apache2 HTTP Web Server\\ \hline
+F-030 & mod\_proxy\_http NULL Pointer Dereference Denial of Service & 7.5 HIGH & CVE-2020-13950 & Apache2 HTTP Web Server\\ \hline
+F-031 & mod\_auth\_digest Stack Overflow via Digest Nonce & 7.3 HIGH & CVE-2020-35452 & Apache2 HTTP Web Server\\ \hline
+F-032 & mod\_session NULL Pointer Dereference Denial of Service & 7.5 HIGH & CVE-2021-26690 & Apache2 HTTP Web Server\\ \hline
+F-033 & mod\_session NULL Pointer Dereference DoS via SessionHeader & 9.8 CRITICAL & CVE-2021-26691 & Apache2 HTTP Web Server\\ \hline
+F-034 & Unexpected $<$Location$>$ Section Matching with 'MergeSlashes OFF' & 5.3 MEDIUM & CVE-2021-30641 & Apache2 HTTP Web Server\\ \hline
+F-035 & Apache 2.4.x $<$ 2.4.52 mod\_lua Buffer Overflow & 9.8 CRITICAL & CVE-2021-44790 & Apache2 HTTP Web Server\\ \hline
+F-036 & mod\_lua Use of Uninitialized Value in r:parsebody & 7.5 HIGH & CVE-2022-22719 & Apache2 HTTP Web Server\\ \hline
+F-037 & HTTP Request Smuggling Connection Closing Issue & 9.8 CRITICAL & CVE-2022-22720 & Apache2 HTTP Web Server\\ \hline
+F-038 & LimitXMLRequestBody Integer Overflow / Out-of-bounds Write & 9.1 CRITICAL & CVE-2022-22721 & Apache2 HTTP Web Server\\ \hline
+F-039 & mod\_sed Read/Write Beyond Bounds Heap Overwrite & 9.8 CRITICAL & CVE-2022-23943 & Apache2 HTTP Web Server\\ \hline
+F-040 & Apache 2.4.x $<$ 2.4.54 Authentication Bypass via mod\_proxy & 9.8 CRITICAL & CVE-2022-31813 & Apache2 HTTP Web Server\\ \hline
+F-041 & If: Request Header Heap Memory Read/Write & 7.5 HIGH & CVE-2006-20001 & Apache2 HTTP Web Server\\ \hline
+F-042 & mod\_proxy\_ajp HTTP Request Smuggling & 9.0 CRITICAL & CVE-2022-36760 & Apache2 HTTP Web Server\\ \hline
+F-043 & Backend Response Header Early Truncation & 5.3 MEDIUM & CVE-2022-37436 & Apache2 HTTP Web Server\\ \hline
+F-044 & HTTP/2 Connection Block DoS via Initial Window Size 0 & 7.5 HIGH & CVE-2023-43622 & Apache2 HTTP Web Server\\ \hline
+F-045 & HTTP/2 Stream Deferred Memory Release DoS & 5.9 MEDIUM & CVE-2023-45802 & Apache2 HTTP Web Server\\ \hline
+F-046 & Apache 2.4.x $<$ 2.4.58 Out-of-Bounds Read (CVE-2023-31122) & 7.5 HIGH & CVE-2023-31122 & Apache2 HTTP Web Server\\ \hline
+F-047 & HTTP Response Splitting in Multiple Modules & 7.3 HIGH & CVE-2023-38709 & Apache2 HTTP Web Server\\ \hline
+F-048 & HTTP Response Splitting Desynchronization Attack & 6.3 MEDIUM & CVE-2024-24795 & Apache2 HTTP Web Server\\ \hline
+F-049 & HTTP/2 DoS by Memory Exhaustion on Continuation Frames & 7.5 HIGH & CVE-2024-27316 & Apache2 HTTP Web Server\\ \hline
+F-050 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-29167) & 9.8 CRITICAL & CVE-2026-29167 & Apache2 HTTP Web Server \\ \hline
+F-051 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-29170) & 6.1 MEDIUM & CVE-2026-29170& Apache2 HTTP Web Server \\ \hline
+F-052 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-34355) & 7.5 HIGH & CVE-2026-34355 & Apache2 HTTP Web Server\\ \hline
+F-053 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-34356) & 7.5 HIGH & CVE-2026-34356 & Apache2 HTTP Web Server\\ \hline
+F-054 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-42535) & 9.1 CRITICAL & CVE-2026-42535 & Apache2 HTTP Web Server\\ \hline
+F-055 & mod\_xml2enc Heap Buffer Overflow & 7.5 HIGH & CVE-2026-42536 & Apache2 HTTP Web Server\\ \hline
+F-056 & Out-of-bounds Read in merge\_response\_headers & 6.5 MEDIUM & CVE-2026-43951& Apache2 HTTP Web Server \\ \hline
+F-057 & Escalation of Privilege via Expressions in .htaccess & 5.5 MEDIUM & CVE-2026-44119 & Apache2 HTTP Web Server\\ \hline
+F-058 & Stack Buffer Over-Read in mod\_ssl OCSP send\_request & 7.3 HIGH & CVE-2026-44185 & Apache2 HTTP Web Server\\ \hline
+F-059 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-44186) & 7.3 HIGH & CVE-2026-44186 & Apache2 HTTP Web Server\\ \hline
+F-060 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-44631) & 9.8 CRITICAL & CVE-2026-44631& Apache2 HTTP Web Server \\ \hline
+F-061 & Apache 2.4.x $<$ 2.4.68 Vulnerability (CVE-2026-48913) & 7.3 HIGH & CVE-2026-48913 & Apache2 HTTP Web Server\\ \hline
+F-062 & HTTP/2 Bomb Remote Denial-of-Service & 7.5 HIGH & CVE-2026-49975 & Apache2 HTTP Web Server\\ \hline
+F-063 & Forward Proxy NULL Pointer Dereference / SSRF & 8.2 HIGH & CVE-2021-44224 & Apache2 HTTP Web Server\\ \hline
+F-064 & mod\_lua Buffer Overflow in Multipart Content & 9.8 CRITICAL & CVE-2021-44790 & Apache2 HTTP Web Server\\ \hline
+F-065 & Malformed HTTP Request NULL Pointer Dereference DoS & 7.5 HIGH & CVE-2021-34798 & Apache2 HTTP Web Server\\ \hline
+F-066 & ap\_escape\_quotes() Buffer Overwrite & 9.8 CRITICAL & CVE-2021-39275& Apache2 HTTP Web Server \\ \hline
+F-067 & mod\_proxy\_ajp HTTP Request Smuggling & 6.5 MEDIUM & CVE-2022-26377 & Apache2 HTTP Web Server\\ \hline
+F-068 & Read Beyond Bounds via ap\_rwrite() & 5.3 MEDIUM & CVE-2022-28614 & Apache2 HTTP Web Server\\ \hline
+F-069 & Read Beyond Bounds in ap\_strcmp\_match() & 9.1 CRITICAL & CVE-2022-28615 & Apache2 HTTP Web Server\\ \hline
+F-070 & Denial of Service in mod\_sed & 7.5 HIGH & CVE-2022-30522 & Apache2 HTTP Web Server\\ \hline
+F-071 & Denial of Service in mod\_lua r:parsebody & 7.5 HIGH & CVE-2022-29404 & Apache2 HTTP Web Server\\ \hline
+F-072 & Information Disclosure in mod\_lua with WebSockets & 7.5 HIGH & CVE-2022-30556 & Apache2 HTTP Web Server\\ \hline
+F-073 & Read Beyond Bounds in mod\_isapi & 5.3 MEDIUM & CVE-2022-28330 & Apache2 HTTP Web Server\\ \hline
+F-074 & Core HTTP Response Splitting & 7.5 HIGH & CVE-2024-42516 & Apache2 HTTP Web Server\\ \hline
+F-075 & mod\_proxy Server-Side Request Forgery via Content-Type Header & 7.5 HIGH & CVE-2024-43204 & Apache2 HTTP Web Server\\ \hline
+F-076 & Windows NTLM Hash Leakage via mod\_rewrite / Expressions & 7.5 HIGH & CVE-2024-43394 & Apache2 HTTP Web Server\\ \hline
+F-077 & mod\_ssl Log File Escape Character Injection & 7.5 HIGH & CVE-2024-47252 & Apache2 HTTP Web Server\\ \hline
+F-078 & Apache 2.4.x $<$ 2.4.64 Vulnerability (CVE-2025-23048) & 9.1 CRITICAL & CVE-2025-23048 & Apache2 HTTP Web Server\\ \hline
+F-079 & mod\_proxy\_http2 Assertion Failure Denial of Service & 7.5 HIGH & CVE-2025-49630 & Apache2 HTTP Web Server\\ \hline
+F-080 & Apache 2.4.x $<$ 2.4.64 Vulnerability (CVE-2025-49812) & 7.4 HIGH & CVE-2025-49812 & Apache2 HTTP Web Server\\ \hline
+F-081 & Apache 2.4.x $<$ 2.4.64 Vulnerability (CVE-2025-53020) & 7.5 HIGH & CVE-2025-53020 & Apache2 HTTP Web Server\\ \hline
+F-082 & mod\_proxy Server-Side Request Forgery (SSRF) & 9.0 CRITICAL & CVE-2021-40438 & Apache2 HTTP Web Server\\ \hline
+F-083 & mod\_http2 Request Splitting and Cache Poisoning & 7.5 HIGH & CVE-2021-33193 & Apache2 HTTP Web Server\\ \hline
+F-084 & mod\_proxy\_uwsgi Out-of-Bounds Read Denial of Service & 7.5 HIGH & CVE-2021-36160 & Apache2 HTTP Web Server\\ \hline
+F-085 & Apache Default Index Page & N/A & N/A & Apache2 HTTP Web Server \\ \hline
+F-086 & Apache ServerTokens Information Disclosure & N/A & N/A & Apache2 HTTP Web Server \\ \hline
+F-087 & Web Server Error Page Information Disclosure & N/A & N/A & Apache2 HTTP Web Server \\ \hline
+F-088 & Web Server HTTP Header Information Disclosure & N/A & N/A & Apache2 HTTP Web Server \\ \hline
+F-089 & userns: also map extents in the reverse map to kernel IDs & 7.0 HIGH & CVE-2018-18955 & Linux Kernel \\ \hline
+\end{longtable}

@@ -1,0 +1,66 @@
+\chapter{Remediation Report}
+
+\section{Overview}
+
+This chapter provides recommended remediation measures for the vulnerabilities identified during the penetration test. 
+\\
+
+It outlines the actions required to mitigate or eliminate the identified security weaknesses, reduce the likelihood of successful exploitation, and strengthen the overall security posture of the target system. 
+\\
+
+The recommendations are prioritised according to the severity and potential impact of the associated findings.
+
+\section{Remediations}
+
+\subsection{Immediate Mitigation}
+
+\subsubsection{SUID Binary Search Path (F-006)}
+\begin{itemize}
+    \item \textbf{Issue:} \texttt{easysysinfo} executes \texttt{cat} via \texttt{system()} without absolute paths, allowing local root escalation via \texttt{PATH} hijacking.
+    \item \textbf{Remediation:}
+    \begin{enumerate}
+        \item Modify source code to specify absolute execution paths (e.g., \texttt{/bin/cat}) or replace shell execution with direct system calls like \texttt{execve()}.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{Web Application Path Traversal and LFI (F-002, F-003)}
+\begin{itemize}
+    \item \textbf{Issue:} Unsanitized input in \texttt{randylogs.php} allows reading arbitrary files (e.g., \texttt{/var/log/auth.log}), which can be paired with SFTP log poisoning for Remote Code Execution.
+    \item \textbf{Remediation:}
+    \begin{enumerate}
+        \item \textbf{Fix LFI:} Remove direct passing of user input into \texttt{include}, \texttt{require}, or file-reading functions. Implement a strict array-based whitelist mapping user input keys to static, pre-approved file paths.
+        \item \textbf{Restrict Access:} Adjust file permissions so system logs are not readable by the web server user (\texttt{www-data}).
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{Sensitive Files and Backup Artifacts (F-001, F-004, F-005)}
+\begin{itemize}
+    \item \textbf{Issue:} Publicly accessible operational files, weak backup archive passwords, and insecure permissions on \texttt{/var/backups/user\_backups.zip}.
+    \item \textbf{Remediation:}
+    \begin{enumerate}
+        \item Relocate sensitive files (\texttt{tasks\_todo.txt}, logs, developer notes) outside the public web root directory.
+        \item Disable directory browsing across web server configurations.
+        \item Restrict file permissions on backup archives so only the owner can access them.
+        \item Re-encrypt backup archives using AES-256 encryption with a high-entropy passphrase.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Software Upgrades}
+
+\subsubsection{Upgrade Apache HTTP Server (F-007 to F-084)}
+\begin{itemize}
+    \item \textbf{Scope:} Addresses 78 reported CVEs (including request smuggling, heap buffer overflows, HTTP/2 DoS, and SSRF flaws).
+    \item \textbf{Remediation:}
+    \begin{enumerate}
+        \item Upgrade the Apache HTTP Server package to version 2.4.68 or later.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{Operating System Kernel Patching (F-089)}
+\begin{itemize}
+    \item \textbf{Issue:} Linux kernel versions 4.15.x to 4.19.x mishandle user namespace mapping (CVE-2018-18955), allowing local privilege escalation.
+    \item \textbf{Remediation:}
+    \begin{enumerate}
+        \item Update the Linux Kernel package to the latest distribution release.
+    \end{enumerate}
+\end{itemize}
