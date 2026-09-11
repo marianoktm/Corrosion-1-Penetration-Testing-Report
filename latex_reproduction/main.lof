@@ -1,0 +1,40 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \texttt {ifconfig} output}}{5}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \texttt {nmap} network scan}}{5}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \texttt {nmap} full scan}}{6}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Apache Default Page}}{6}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Execution of \texttt {DirBuster}}}{7}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \texttt {DirBuster} results}}{7}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \texttt {Gobuster} results}}{8}{figure.2.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \texttt {Nessus} Basic Network Scan}}{10}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \texttt {Nessus} Advanced Web Application Test}}{11}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Nikto Scan Output}}{12}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces WafW00f scan}}{12}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \texttt {OpenSSH 8.4p1} search results in the Exploit Database}}{13}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \texttt {Apache HTTP Server 2.4.46} search results in the Exploit Database}}{14}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Linux kernel search results in the Exploit Database}}{14}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \texttt {tasks\_todo.txt} content}}{15}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces \texttt {randylogs.php} parameter fuzzing}}{16}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \texttt {auth.log} file content}}{17}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces SSH RCE attempt}}{17}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces SFTP RCE attempt}}{18}{figure.3.12}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Metasploit Search Partial Output}}{20}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PHP parameter injection}}{20}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Netcat listening on port 9000}}{21}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Issuing the request through Firefox}}{22}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Reverse Shell Success}}{22}{figure.4.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \texttt {randy} user entry}}{23}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \texttt {user\_backups.zip} extraction failure}}{24}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Starting a web server on the target machine}}{24}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Downloading \texttt {user\_backup.zip}}}{24}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \texttt {user\_backup.txt} Password Cracking}}{25}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Content of \texttt {user\_backup.zip}}}{25}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Logging into the \texttt {randy} account}}{26}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Exploring \texttt {randy}'s directories}}{27}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \texttt {easysysinfo.c} source file}}{27}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Fake \texttt {cat} program}}{28}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Successful Privilege Escalation}}{28}{figure.5.11}%
