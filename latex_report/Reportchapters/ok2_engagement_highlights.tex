@@ -1,0 +1,166 @@
+\chapter{Engagement Highlights} \label{highlights}
+\section{Overview}
+This chapter defines the Rules of Engagement (RoE) for the penetration testing activity performed as part of the Penetration Testing and Ethical Hacking exam.
+
+\section{Purpose and Objectives}
+The purpose of this penetration testing activity is to evaluate the security posture of the intentionally vulnerable virtual machine \textbf{"Corrosion: 1"}.
+\\
+
+The penetration testing activities is performed in a black-box fashion.
+\\
+
+The activity is conducted as part of the Penetration Testing and Ethical Hacking exam and aims to demonstrate practical knowledge of offensive security methodologies.
+\\
+
+The objectives of the assessment are:
+
+\begin{itemize}
+    \item Identify security vulnerabilities present within the target system.
+    \item Perform reconnaissance and enumeration activities.
+    \item Exploit discovered vulnerabilities where technically feasible.
+    \item Demonstrate penetration testing methodologies and techniques.
+    \item Document discovered vulnerabilities, exploitation procedures,
+    evidence, and remediation recommendations.
+\end{itemize}
+
+The penetration test is conducted exclusively for educational purposes within an authorized laboratory environment.
+
+\section{Scope of Testing}
+\subsection{In-Scope Assets}
+The following asset is explicitly authorized for testing:
+
+\begin{itemize}
+    \item \textbf{Target:} Corrosion: 1 virtual machine.
+    \item \textbf{Environment:} Isolated virtual laboratory network.
+\end{itemize}
+
+All services, applications, configurations, user accounts, and files contained inside the target virtual machine are considered within scope.
+
+\subsection{Out-of-Scope Assets}
+The following assets are explicitly excluded from the scope:
+
+\begin{itemize}
+    \item The physical host machine running the virtualization software.
+    \item Other virtual machines present in the laboratory environment.
+    \item External networks and Internet-accessible systems.
+    \item Any system not explicitly identified as the target machine.
+\end{itemize}
+
+No testing activity shall intentionally affect systems outside the authorized
+scope.
+
+
+\section{Authorized Testing Activities}
+The following activities are authorized against the target virtual machine:
+
+\begin{itemize}
+    \item Network discovery and host identification.
+    \item Port scanning and service enumeration.
+    \item Vulnerability identification and assessment.
+    \item Web application testing.
+    \item Configuration analysis.
+    \item Credential testing against exposed services.
+    \item Controlled exploitation of identified vulnerabilities.
+    \item Privilege escalation attempts.
+    \item Post-exploitation analysis limited exclusively to the target machine.
+    \item Collection of technical evidence for reporting purposes.
+\end{itemize}
+
+Since the target machine is intentionally vulnerable and isolated, exploitation activities are permitted when required to demonstrate penetration testing techniques.
+
+\section{Prohibited Activities}
+The following actions are prohibited:
+
+\begin{itemize}
+    \item Attacking systems outside the defined scope.
+    \item Performing denial-of-service attacks against external systems.
+    \item Modifying or damaging the host operating system.
+    \item Performing security tests against third-party infrastructure.
+\end{itemize}
+
+\section{Testing Methodology}
+\subsection{Methodology}
+The penetration testing activities will be conducted in accordance with the \textit{Penetration Testing Execution Standard (PTES)}. 
+\\
+
+PTES provides a structured framework for planning, executing, and documenting penetration tests, ensuring that the assessment follows a consistent and methodical approach. 
+\\
+
+The methodology encompasses the relevant phases of the penetration testing process, including pre-engagement interactions, intelligence gathering, threat modelling, vulnerability analysis, exploitation, post-exploitation, and reporting \cite{ptes}. 
+
+\subsection{Tools}
+The following tools were used during the assessment:
+
+\begin{itemize}
+	\item Oracle VirtualBox \cite{virtualbox};
+	\item Kali Linux \cite{kali};
+    \item \texttt{nmap} \cite{nmap};
+    \item \texttt{DirBuster} \cite{dirbuster};
+    \item \texttt{Gobuster} \cite{gobuster};
+    \item \texttt{wfuzz} \cite{wfuzz};
+    \item \texttt{Nessus} \cite{nessus};
+    \item \texttt{Nikto} \cite{nikto};
+    \item \texttt{WafW00f} \cite{wafwoof};
+    \item \texttt{Exploit Database} \cite{exploitdb};
+    \item \texttt{Metasploit} \cite{metasploitMetasploitPenetration};
+    \item \texttt{ssh} and \texttt{sftp} \cite{ssh};
+    \item \texttt{curl} \cite{curl};
+    \item \texttt{zip2john} and \texttt{john} \cite{john};
+    \item \texttt{C} \cite{c}, \texttt{PHP} \cite{php} and \texttt{Python} \cite{python} programming;
+    \item \texttt{netcat} \cite{netcat}.
+\end{itemize}
+
+\section{Data Handling}
+Information collected during the penetration test shall be handled responsibly.
+\\
+
+The tester agrees to:
+
+\begin{itemize}
+    \item Use collected information only for academic evaluation purposes.
+    \item Preserve only evidence required for the final report.
+    \item Remove temporary testing artifacts when possible.
+\end{itemize}
+
+\section{Risk Management}
+Although the target system is intentionally vulnerable, penetration testing
+activities may cause service interruption, system instability, or modification
+of data contained within the virtual machine.
+\\
+
+The tester is responsible for maintaining the isolation of the laboratory
+environment and ensuring that testing activities remain limited to the
+authorized target.
+\\
+
+Virtual machine snapshots may be used to restore the environment if necessary.
+
+\section{Reporting and Communication}
+The final penetration testing report will contain:
+
+\begin{itemize}
+    \item Scope and methodology.
+    \item Tools and techniques used.
+    \item Identified vulnerabilities.
+    \item Exploitation procedures.
+    \item Evidence of successful exploitation.
+    \item Security impact analysis.
+    \item Recommended mitigation strategies.
+\end{itemize}
+
+The report will be submitted to Prof. Arcangelo Castiglione as part of the
+Penetration Testing and Ethical Hacking examination.
+
+\section{Duration of Testing}
+
+Testing activities are authorized during the exam period assigned by the
+course supervisor.
+\\
+
+The tester may perform penetration testing activities against the target
+virtual machine during this period, provided that all rules defined in this
+document are followed.
+
+\section{Authorization}
+This section provides formal authorization for the tester to perform
+penetration testing activities against the specified target system, within the scope and limitations described in this chapter.
