@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.9)  11 SEP 2026 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.9)  13 SEP 2026 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1460,22 +1460,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--130
+Underfull \hbox (badness 10000) in paragraph at lines 127--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--135
+Underfull \hbox (badness 10000) in paragraph at lines 132--136
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
 
  []
 
@@ -1983,13 +1983,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
 
 ]
-<GlobalAssets/randylogsphpfuzz.png, id=771, 1419.05156pt x 474.27188pt>
+<GlobalAssets/randylogsphpfuzz.png, id=773, 1419.05156pt x 474.27188pt>
 File: GlobalAssets/randylogsphpfuzz.png Graphic file (type png)
 <use GlobalAssets/randylogsphpfuzz.png>
 Package pdftex.def Info: GlobalAssets/randylogsphpfuzz.png  used on input line 
 32.
 (pdftex.def)             Requested size: 339.72592pt x 113.5381pt.
-<GlobalAssets/authlogcontent.png, id=773, 832.61063pt x 362.10281pt>
+<GlobalAssets/authlogcontent.png, id=775, 832.61063pt x 362.10281pt>
 File: GlobalAssets/authlogcontent.png Graphic file (type png)
 <use GlobalAssets/authlogcontent.png>
 Package pdftex.def Info: GlobalAssets/authlogcontent.png  used on input line 45
@@ -2010,13 +2010,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-<GlobalAssets/sshinvalidchar.png, id=782, 600.74437pt x 105.39375pt>
+<GlobalAssets/sshinvalidchar.png, id=784, 600.74437pt x 105.39375pt>
 File: GlobalAssets/sshinvalidchar.png Graphic file (type png)
 <use GlobalAssets/sshinvalidchar.png>
 Package pdftex.def Info: GlobalAssets/sshinvalidchar.png  used on input line 67
 .
 (pdftex.def)             Requested size: 339.72592pt x 59.60225pt.
-<GlobalAssets/rcesuccess.png, id=783, 1168.365pt x 371.13657pt>
+<GlobalAssets/rcesuccess.png, id=785, 1168.365pt x 371.13657pt>
 File: GlobalAssets/rcesuccess.png Graphic file (type png)
 <use GlobalAssets/rcesuccess.png>
 Package pdftex.def Info: GlobalAssets/rcesuccess.png  used on input line 76.
@@ -2036,18 +2036,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-<GlobalAssets/netcat1.png, id=792, 360.59718pt x 121.95563pt>
+<GlobalAssets/netcat1.png, id=794, 360.59718pt x 121.95563pt>
 File: GlobalAssets/netcat1.png Graphic file (type png)
 <use GlobalAssets/netcat1.png>
 Package pdftex.def Info: GlobalAssets/netcat1.png  used on input line 109.
 (pdftex.def)             Requested size: 226.48395pt x 76.59796pt.
-<GlobalAssets/attackfirefox.png, id=793, 717.43031pt x 73.77562pt>
+<GlobalAssets/attackfirefox.png, id=795, 717.43031pt x 73.77562pt>
 File: GlobalAssets/attackfirefox.png Graphic file (type png)
 <use GlobalAssets/attackfirefox.png>
 Package pdftex.def Info: GlobalAssets/attackfirefox.png  used on input line 118
 .
 (pdftex.def)             Requested size: 339.72592pt x 34.9357pt.
-<GlobalAssets/reverseshellsuccess.png, id=794, 995.97093pt x 268.75406pt>
+<GlobalAssets/reverseshellsuccess.png, id=796, 995.97093pt x 268.75406pt>
 File: GlobalAssets/reverseshellsuccess.png Graphic file (type png)
 <use GlobalAssets/reverseshellsuccess.png>
 Package pdftex.def Info: GlobalAssets/reverseshellsuccess.png  used on input li
@@ -2058,12 +2058,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
-<GlobalAssets/userrandy.png, id=806, 886.81313pt x 247.67531pt>
+<GlobalAssets/userrandy.png, id=808, 886.81313pt x 247.67531pt>
 File: GlobalAssets/userrandy.png Graphic file (type png)
 <use GlobalAssets/userrandy.png>
 Package pdftex.def Info: GlobalAssets/userrandy.png  used on input line 143.
 (pdftex.def)             Requested size: 339.72592pt x 94.88098pt.
-<GlobalAssets/unzipfail.png, id=807, 886.81313pt x 175.40532pt>
+<GlobalAssets/unzipfail.png, id=809, 886.81313pt x 175.40532pt>
 File: GlobalAssets/unzipfail.png Graphic file (type png)
 <use GlobalAssets/unzipfail.png>
 Package pdftex.def Info: GlobalAssets/unzipfail.png  used on input line 152.
@@ -2074,23 +2074,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
-<GlobalAssets/randybaby.png, id=818, 1032.85875pt x 585.68813pt>
+<GlobalAssets/randybaby.png, id=820, 1032.85875pt x 585.68813pt>
 File: GlobalAssets/randybaby.png Graphic file (type png)
 <use GlobalAssets/randybaby.png>
 Package pdftex.def Info: GlobalAssets/randybaby.png  used on input line 164.
 (pdftex.def)             Requested size: 339.72592pt x 192.64316pt.
-<GlobalAssets/zipcracked.png, id=819, 578.16pt x 386.94562pt>
+<GlobalAssets/zipcracked.png, id=821, 578.16pt x 386.94562pt>
 File: GlobalAssets/zipcracked.png Graphic file (type png)
 <use GlobalAssets/zipcracked.png>
 Package pdftex.def Info: GlobalAssets/zipcracked.png  used on input line 180.
 (pdftex.def)             Requested size: 226.48395pt x 151.57536pt.
 [56 <./GlobalAssets/unzipfail.png> <./GlobalAssets/randybaby.png>]
-<GlobalAssets/randylogin.png, id=828, 849.92531pt x 663.98062pt>
+<GlobalAssets/randylogin.png, id=830, 849.92531pt x 663.98062pt>
 File: GlobalAssets/randylogin.png Graphic file (type png)
 <use GlobalAssets/randylogin.png>
 Package pdftex.def Info: GlobalAssets/randylogin.png  used on input line 189.
 (pdftex.def)             Requested size: 339.72592pt x 265.40517pt.
-<GlobalAssets/exploring.png, id=829, 1216.545pt x 465.23813pt>
+<GlobalAssets/exploring.png, id=831, 1216.545pt x 465.23813pt>
 File: GlobalAssets/exploring.png Graphic file (type png)
 <use GlobalAssets/exploring.png>
 Package pdftex.def Info: GlobalAssets/exploring.png  used on input line 202.
@@ -2105,7 +2105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
-<GlobalAssets/easysysinfo.png, id=839, 395.22656pt x 334.24875pt>
+<GlobalAssets/easysysinfo.png, id=841, 395.22656pt x 334.24875pt>
 File: GlobalAssets/easysysinfo.png Graphic file (type png)
 <use GlobalAssets/easysysinfo.png>
 Package pdftex.def Info: GlobalAssets/easysysinfo.png  used on input line 217.
@@ -2121,7 +2121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--227
  []
 
 [58 <./GlobalAssets/exploring.png> <./GlobalAssets/easysysinfo.png>]
-<GlobalAssets/fakecat.png, id=848, 297.36093pt x 188.20313pt>
+<GlobalAssets/fakecat.png, id=850, 297.36093pt x 188.20313pt>
 File: GlobalAssets/fakecat.png Graphic file (type png)
 <use GlobalAssets/fakecat.png>
 Package pdftex.def Info: GlobalAssets/fakecat.png  used on input line 236.
@@ -2136,7 +2136,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
-<GlobalAssets/rooted.png, id=849, 506.6428pt x 164.11313pt>
+<GlobalAssets/rooted.png, id=851, 506.6428pt x 164.11313pt>
 File: GlobalAssets/rooted.png Graphic file (type png)
 <use GlobalAssets/rooted.png>
 Package pdftex.def Info: GlobalAssets/rooted.png  used on input line 251.
@@ -2162,10 +2162,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42690 strings out of 467441
- 963869 string characters out of 5407592
- 2018189 words of memory out of 5000000
- 70882 multiletter control sequences out of 15000+600000
+ 42694 strings out of 467441
+ 964008 string characters out of 5407592
+ 2018239 words of memory out of 5000000
+ 70885 multiletter control sequences out of 15000+600000
  695950 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,7n,118p,1003b,1525s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2178,9 +2178,9 @@ b><C:/Users/apont/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pf
 b><C:/Users/apont/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pf
 b><C:/Users/apont/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
 b>
-Output written on main.pdf (66 pages, 3058567 bytes).
+Output written on main.pdf (66 pages, 3059397 bytes).
 PDF statistics:
- 1027 PDF objects out of 1200 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
+ 1031 PDF objects out of 1200 (max. 8388607)
+ 314 named destinations out of 1000 (max. 500000)
  40618 words of extra memory for PDF output out of 42996 (max. 10000000)
 

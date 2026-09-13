@@ -54,6 +54,13 @@
       \field{howpublished}{\url{https://www.exploit-db.com/}}
       \field{title}{{E}xploit {D}atabase --- exploit-db.com}
     \endentry
+    \entry{webacoo}{misc}{}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/anestisb/WeBaCoo}}
+      \field{title}{{G}it{H}ub - anestisb/{W}e{B}a{C}oo: {W}eb {B}ackdoor {C}ookie {S}cript-{K}it --- github.com}
+    \endentry
     \entry{wafwoof}{misc}{}{}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
