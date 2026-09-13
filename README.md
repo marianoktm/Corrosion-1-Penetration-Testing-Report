@@ -83,8 +83,3 @@ The techniques, exploit code, commands, and procedures contained in this reposit
 This repository was developed as part of an examination project for the **Penetration Testing and Ethical Hacking** course.
 
 The project demonstrates the practical application of penetration testing concepts including reconnaissance, enumeration, vulnerability identification, exploitation, post-exploitation, evidence collection, and technical reporting.
-
----
-
-**Project:** Corrosion: 1 Penetration Test
-**Purpose:** Penetration Testing and Ethical Hacking examination project
