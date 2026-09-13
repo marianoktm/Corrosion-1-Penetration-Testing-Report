@@ -57,7 +57,7 @@ The final reproduction guide.
 
 It documents the procedures necessary to reproduce the penetration testing activity and validate the documented findings in the laboratory environment.
 
-### `REPRODUCTION GUIDE - CORROSION 1.pdf`
+### `PRESENTATION - CORROSION 1.pdf`
 
 The presentation of the penetration testing activity.
 
