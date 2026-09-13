@@ -19,6 +19,7 @@ The objective of the project was to perform a complete penetration test against 
 │   └── ...
 ├── PENTEST REPORT - CORROSION 1.pdf
 ├── REPRODUCTION GUIDE - CORROSION 1.pdf
+├── PRESENTATION - CORROSION 1.pdf
 └── README.md
 ```
 
@@ -55,6 +56,12 @@ It documents the assessment methodology, reconnaissance and enumeration activiti
 The final reproduction guide.
 
 It documents the procedures necessary to reproduce the penetration testing activity and validate the documented findings in the laboratory environment.
+
+### `REPRODUCTION GUIDE - CORROSION 1.pdf`
+
+The presentation of the penetration testing activity.
+
+It highlights the key steps that were followed to execute the penetration testing assessment.
 
 ## Assessment Target
 
