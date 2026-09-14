@@ -17,8 +17,8 @@ The objective of the project was to perform a complete penetration test against 
 ├── latex_reproduction/
 │   ├── ...
 │   └── ...
-├── PENTEST REPORT - CORROSION 1.pdf
-├── REPRODUCTION GUIDE - CORROSION 1.pdf
+├── REPORT - CORROSION 1.pdf
+├── NARRATIVE - CORROSION 1.pdf
 ├── PRESENTATION - CORROSION 1.pdf
 └── README.md
 ```
@@ -29,7 +29,7 @@ Contains the **LaTeX source code** used to generate the penetration testing repo
 
 The source files allow the report to be inspected, modified, and reproduced from its original source.
 
-### `latex_reproduction/`
+### `latex_narrative/`
 
 Contains the **LaTeX source code** used to generate the reproduction guide.
 
@@ -45,13 +45,13 @@ Contains supporting material produced or used during the assessment, including:
 
 These files provide additional technical evidence supporting the findings documented in the main report.
 
-### `PENTEST REPORT - CORROSION 1.pdf`
+### `REPORT - CORROSION 1.pdf`
 
 The final penetration testing report.
 
 It documents the assessment methodology, reconnaissance and enumeration activities, identified vulnerabilities, exploitation procedures, post-exploitation activities, evidence, and conclusions.
 
-### `REPRODUCTION GUIDE - CORROSION 1.pdf`
+### `NARRATIVE - CORROSION 1.pdf`
 
 The final reproduction guide.
 
