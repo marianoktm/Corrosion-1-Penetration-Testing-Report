@@ -1,0 +1,47 @@
+\chapter{Executive Summary}
+
+\section{Overview}
+This report presents the results of the penetration testing engagement conducted by the student \textbf{Mariano Aponte}, with student ID \textbf{522501877} for the \textbf{Penetration Testing and Ethical Hacking exam}. 
+\\
+
+The assessment was carried out between \textbf{August 1, 2026} and \textbf{August 30, 2026}, and targeted the \textbf{"Corrosion: 1"} asset, a deliberately vulnerable system available on the VulnHub platform \cite{vulnhubCorrosion}.
+\\
+
+The objective of the assessment was to evaluate the security posture of the asset by identifying vulnerabilities that could be exploited by a malicious actor.
+\\
+
+The assessment was performed using a combination of automated and manual testing techniques, in a black-box fashion. The methodology was aligned with the \textbf{Penetration Testing Execution Standard (PTES)} \cite{ptes}. 
+\\
+
+All the testing activities were performed in accordance to the Rules of Engagement agreed by both parties, available in the Engagement Highlights section.
+\\
+
+The information available in this document is meant to be interpreted as educational only. All the penetration testing activities were carried out for educational purposes. No third parties assets were harmed or tested without explicit authorization.
+\\
+
+\section{Overall Assessment}
+
+The assessment identified \textbf{89 vulnerabilities} of the following severity:
+\\
+
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Severity} & \textbf{Count} \\
+		\midrule
+		Critical & 21 \\
+		High & 45 \\
+		Medium & 19 \\
+		Low & 0 \\
+		Not Rated/Info & 4 \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+Several of these vulnerabilities were successfully chained during exploitation, ultimately resulting in complete compromise of the target system.
+\\
+
+Based on the number and severity of identified vulnerabilities and the successful compromise of the target, the overall security posture is assessed as \textbf{Very Low}.
+
+\section{Conclusion}
+\textbf{This report reflects the security posture of the assessed systems at the time of testing. Changes made to the environment after the assessment may affect the validity of these results. Continuous security monitoring and periodic reassessment are therefore always recommended.}

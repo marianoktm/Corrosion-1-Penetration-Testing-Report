@@ -1,0 +1,168 @@
+\contentsline {chapter}{\numberline {1}Executive Summary}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Overall Assessment}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Conclusion}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Engagement Highlights}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Purpose and Objectives}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Scope of Testing}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}In-Scope Assets}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Out-of-Scope Assets}{4}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Authorized Testing Activities}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Prohibited Activities}{5}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Testing Methodology}{5}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Methodology}{5}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Tools}{5}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Data Handling}{6}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Risk Management}{6}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Reporting and Communication}{7}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Duration of Testing}{7}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Authorization}{7}{section.2.11}%
+\contentsline {chapter}{\numberline {3}Vulnerability Report}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Key Findings}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Vulnerability Index}{9}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Remediation Report}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Remediations}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Immediate Mitigation}{16}{subsection.4.2.1}%
+\contentsline {subsubsection}{SUID Binary Search Path (F-006)}{16}{section*.2}%
+\contentsline {subsubsection}{Web Application Path Traversal and LFI (F-002, F-003)}{16}{section*.3}%
+\contentsline {subsubsection}{Sensitive Files and Backup Artifacts (F-001, F-004, F-005)}{17}{section*.4}%
+\contentsline {subsection}{\numberline {4.2.2}Software Upgrades}{17}{subsection.4.2.2}%
+\contentsline {subsubsection}{Upgrade Apache HTTP Server (F-007 to F-084)}{17}{section*.5}%
+\contentsline {subsubsection}{Operating System Kernel Patching (F-089)}{17}{section*.6}%
+\contentsline {chapter}{\numberline {5}Findings Summary}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Summary}{18}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Detailed Summary}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Vulnerabilities}{20}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Multiple Corrosion Weaknesses}{20}{subsection.6.2.1}%
+\contentsline {subsubsection}{F-001: Sensitive Information Exposure in Public Web Root}{20}{section*.7}%
+\contentsline {subsubsection}{F-002: Local File Inclusion (LFI) via Path Traversal in randylogs.php}{20}{section*.8}%
+\contentsline {subsubsection}{F-003: Log Poisoning via Unsanitized SFTP Authentication Input}{21}{section*.9}%
+\contentsline {subsubsection}{F-004: Insecure Local Permissions on Backup Artifacts}{21}{section*.10}%
+\contentsline {subsubsection}{F-005: Weak Password Architecture on Backup Archives}{22}{section*.11}%
+\contentsline {subsubsection}{F-006: Local Privilege Escalation via SUID Binary Search Path Hijacking}{22}{section*.12}%
+\contentsline {subsection}{\numberline {6.2.2}Apache 2.4.x < 2.4.56 Multiple Vulnerabilities}{23}{subsection.6.2.2}%
+\contentsline {subsubsection}{F-007: HTTP Request Splitting / Smuggling with mod\_rewrite and mod\_proxy}{23}{section*.13}%
+\contentsline {subsubsection}{F-008: mod\_proxy\_uwsgi HTTP Response Splitting}{23}{section*.14}%
+\contentsline {subsection}{\numberline {6.2.3}Apache 2.4.x < 2.4.60 Multiple Vulnerabilities}{24}{subsection.6.2.3}%
+\contentsline {subsubsection}{F-009: WebSocket Protocol Upgrade Null Pointer Dereference}{24}{section*.15}%
+\contentsline {subsubsection}{F-010: SSRF in Apache HTTP Server on Windows NTLM Hash Leakage}{24}{section*.16}%
+\contentsline {subsubsection}{F-011: mod\_proxy Request URL Encoding Authentication Bypass}{24}{section*.17}%
+\contentsline {subsubsection}{F-012: mod\_rewrite Substitution Encoding Script Execution / Source Disclosure}{25}{section*.18}%
+\contentsline {subsubsection}{F-013: mod\_rewrite Output Escaping File Mapping Vulnerability}{25}{section*.19}%
+\contentsline {subsubsection}{F-014: Core Information Disclosure / SSRF / Script Execution}{25}{section*.20}%
+\contentsline {subsubsection}{F-015: mod\_proxy Null Pointer Dereference Denial of Service}{26}{section*.21}%
+\contentsline {subsubsection}{F-016: mod\_rewrite Potential SSRF via mod\_proxy}{26}{section*.22}%
+\contentsline {subsection}{\numberline {6.2.4}Apache 2.4.x < 2.4.67 Multiple Vulnerabilities}{26}{subsection.6.2.4}%
+\contentsline {subsubsection}{F-017: HTTP/2 Protocol Double Free and Remote Code Execution}{26}{section*.23}%
+\contentsline {subsubsection}{F-018: Local .htaccess Authors Escalation of Privilege}{27}{section*.24}%
+\contentsline {subsubsection}{F-019: mod\_proxy\_ajp Heap-based Buffer Overflow}{27}{section*.25}%
+\contentsline {subsubsection}{F-020: mod\_md Resource Allocation Without Limits via OCSP}{27}{section*.26}%
+\contentsline {subsubsection}{F-021: mod\_dav\_lock NULL Pointer Dereference}{28}{section*.27}%
+\contentsline {subsubsection}{F-022: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-33006)}{28}{section*.28}%
+\contentsline {subsubsection}{F-023: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-33007)}{28}{section*.29}%
+\contentsline {subsubsection}{F-024: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-33523)}{28}{section*.30}%
+\contentsline {subsubsection}{F-025: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-33857)}{29}{section*.31}%
+\contentsline {subsubsection}{F-026: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-34032)}{29}{section*.32}%
+\contentsline {subsubsection}{F-027: Apache 2.4.x < 2.4.67 Vulnerability (CVE-2026-34059)}{29}{section*.33}%
+\contentsline {subsection}{\numberline {6.2.5}Apache 2.4.x < 2.4.47 Multiple Vulnerabilities}{29}{subsection.6.2.5}%
+\contentsline {subsubsection}{F-028: mod\_proxy\_wstunnel and mod\_proxy\_http Upgradable Protocols Negotiation}{29}{section*.34}%
+\contentsline {subsubsection}{F-029: Windows Local Process Stopping Vulnerability}{30}{section*.35}%
+\contentsline {subsubsection}{F-030: mod\_proxy\_http NULL Pointer Dereference Denial of Service}{30}{section*.36}%
+\contentsline {subsubsection}{F-031: mod\_auth\_digest Stack Overflow via Digest Nonce}{30}{section*.37}%
+\contentsline {subsubsection}{F-032: mod\_session NULL Pointer Dereference Denial of Service}{30}{section*.38}%
+\contentsline {subsubsection}{F-033: mod\_session NULL Pointer Dereference DoS via SessionHeader}{31}{section*.39}%
+\contentsline {subsubsection}{F-034: Unexpected <Location> Section Matching with 'MergeSlashes OFF'}{31}{section*.40}%
+\contentsline {subsection}{\numberline {6.2.6}Apache 2.4.x < 2.4.52 mod\_lua Buffer Overflow}{31}{subsection.6.2.6}%
+\contentsline {subsubsection}{F-035: Apache 2.4.x < 2.4.52 mod\_lua Buffer Overflow}{31}{section*.41}%
+\contentsline {subsection}{\numberline {6.2.7}Apache 2.4.x < 2.4.53 Multiple Vulnerabilities}{32}{subsection.6.2.7}%
+\contentsline {subsubsection}{F-036: mod\_lua Use of Uninitialized Value in r:parsebody}{32}{section*.42}%
+\contentsline {subsubsection}{F-037: HTTP Request Smuggling Connection Closing Issue}{32}{section*.43}%
+\contentsline {subsubsection}{F-038: LimitXMLRequestBody Integer Overflow / Out-of-bounds Write}{32}{section*.44}%
+\contentsline {subsubsection}{F-039: mod\_sed Read/Write Beyond Bounds Heap Overwrite}{33}{section*.45}%
+\contentsline {subsection}{\numberline {6.2.8}Apache 2.4.x < 2.4.54 Authentication Bypass}{33}{subsection.6.2.8}%
+\contentsline {subsubsection}{F-040: Apache 2.4.x < 2.4.54 Authentication Bypass via mod\_proxy}{33}{section*.46}%
+\contentsline {subsection}{\numberline {6.2.9}Apache 2.4.x < 2.4.55 Multiple Vulnerabilities}{34}{subsection.6.2.9}%
+\contentsline {subsubsection}{F-041: If: Request Header Heap Memory Read/Write}{34}{section*.47}%
+\contentsline {subsubsection}{F-042: mod\_proxy\_ajp HTTP Request Smuggling}{34}{section*.48}%
+\contentsline {subsubsection}{F-043: Backend Response Header Early Truncation}{34}{section*.49}%
+\contentsline {subsection}{\numberline {6.2.10}Apache 2.4.x < 2.4.58 Multiple Vulnerabilities}{35}{subsection.6.2.10}%
+\contentsline {subsubsection}{F-044: HTTP/2 Connection Block DoS via Initial Window Size 0}{35}{section*.50}%
+\contentsline {subsubsection}{F-045: HTTP/2 Stream Deferred Memory Release DoS}{35}{section*.51}%
+\contentsline {subsection}{\numberline {6.2.11}Apache 2.4.x < 2.4.58 Out-of-Bounds Read (CVE-2023-31122)}{36}{subsection.6.2.11}%
+\contentsline {subsubsection}{F-046: Apache 2.4.x < 2.4.58 Out-of-Bounds Read (CVE-2023-31122)}{36}{section*.52}%
+\contentsline {subsection}{\numberline {6.2.12}Apache 2.4.x < 2.4.59 Multiple Vulnerabilities}{36}{subsection.6.2.12}%
+\contentsline {subsubsection}{F-047: HTTP Response Splitting in Multiple Modules}{36}{section*.53}%
+\contentsline {subsubsection}{F-048: HTTP Response Splitting Desynchronization Attack}{36}{section*.54}%
+\contentsline {subsubsection}{F-049: HTTP/2 DoS by Memory Exhaustion on Continuation Frames}{37}{section*.55}%
+\contentsline {subsection}{\numberline {6.2.13}Apache 2.4.x < 2.4.68 Multiple Vulnerabilities}{37}{subsection.6.2.13}%
+\contentsline {subsubsection}{F-050: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-29167)}{37}{section*.56}%
+\contentsline {subsubsection}{F-051: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-29170)}{37}{section*.57}%
+\contentsline {subsubsection}{F-052: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-34355)}{38}{section*.58}%
+\contentsline {subsubsection}{F-053: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-34356)}{38}{section*.59}%
+\contentsline {subsubsection}{F-054: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-42535)}{38}{section*.60}%
+\contentsline {subsubsection}{F-055: mod\_xml2enc Heap Buffer Overflow}{39}{section*.61}%
+\contentsline {subsubsection}{F-056: Out-of-bounds Read in \texttt {merge\_response\_headers}}{39}{section*.62}%
+\contentsline {subsubsection}{F-057: Escalation of Privilege via Expressions in .htaccess}{39}{section*.63}%
+\contentsline {subsubsection}{F-058: Stack Buffer Over-Read in mod\_ssl OCSP \texttt {send\_request}}{40}{section*.64}%
+\contentsline {subsubsection}{F-059: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-44186)}{40}{section*.65}%
+\contentsline {subsubsection}{F-060: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-44631)}{40}{section*.66}%
+\contentsline {subsubsection}{F-061: Apache 2.4.x < 2.4.68 Vulnerability (CVE-2026-48913)}{40}{section*.67}%
+\contentsline {subsubsection}{F-062: HTTP/2 Bomb Remote Denial-of-Service}{41}{section*.68}%
+\contentsline {subsection}{\numberline {6.2.14}Apache 2.4.x >= 2.4.7 / < 2.4.52 Forward Proxy DoS / SSRF}{41}{subsection.6.2.14}%
+\contentsline {subsubsection}{F-063: Forward Proxy NULL Pointer Dereference / SSRF}{41}{section*.69}%
+\contentsline {subsubsection}{F-064: mod\_lua Buffer Overflow in Multipart Content}{41}{section*.70}%
+\contentsline {subsection}{\numberline {6.2.15}Apache < 2.4.49 Multiple Vulnerabilities}{42}{subsection.6.2.15}%
+\contentsline {subsubsection}{F-065: Malformed HTTP Request NULL Pointer Dereference DoS}{42}{section*.71}%
+\contentsline {subsubsection}{F-066: ap\_escape\_quotes() Buffer Overwrite}{42}{section*.72}%
+\contentsline {subsection}{\numberline {6.2.16}Apache 2.4.x < 2.4.54 HTTP Request Smuggling Vulnerability}{42}{subsection.6.2.16}%
+\contentsline {subsubsection}{F-067: mod\_proxy\_ajp HTTP Request Smuggling}{42}{section*.73}%
+\contentsline {subsection}{\numberline {6.2.17}Apache 2.4.x < 2.4.54 Multiple Vulnerabilities}{43}{subsection.6.2.17}%
+\contentsline {subsubsection}{F-068: Read Beyond Bounds via \texttt {ap\_rwrite()}}{43}{section*.74}%
+\contentsline {subsubsection}{F-069: Read Beyond Bounds in \texttt {ap\_strcmp\_match()}}{43}{section*.75}%
+\contentsline {subsection}{\numberline {6.2.18}Apache 2.4.x < 2.4.54 Multiple Vulnerabilities}{44}{subsection.6.2.18}%
+\contentsline {subsubsection}{F-070: Denial of Service in mod\_sed}{44}{section*.76}%
+\contentsline {subsection}{\numberline {6.2.19}Apache 2.4.x < 2.4.54 Multiple Vulnerabilities (mod\_lua)}{44}{subsection.6.2.19}%
+\contentsline {subsubsection}{F-071: Denial of Service in mod\_lua \texttt {r:parsebody}}{44}{section*.77}%
+\contentsline {subsubsection}{F-072: Information Disclosure in mod\_lua with WebSockets}{44}{section*.78}%
+\contentsline {subsection}{\numberline {6.2.20}Apache 2.4.x < 2.4.54 Out-Of-Bounds Read (CVE-2022-28330)}{45}{subsection.6.2.20}%
+\contentsline {subsubsection}{F-073: Read Beyond Bounds in mod\_isapi}{45}{section*.79}%
+\contentsline {subsection}{\numberline {6.2.21}Apache 2.4.x < 2.4.64 Multiple Vulnerabilities}{45}{subsection.6.2.21}%
+\contentsline {subsubsection}{F-074: Core HTTP Response Splitting}{45}{section*.80}%
+\contentsline {subsubsection}{F-075: mod\_proxy Server-Side Request Forgery via Content-Type Header}{46}{section*.81}%
+\contentsline {subsubsection}{F-076: Windows NTLM Hash Leakage via mod\_rewrite / Expressions}{46}{section*.82}%
+\contentsline {subsubsection}{F-077: mod\_ssl Log File Escape Character Injection}{46}{section*.83}%
+\contentsline {subsubsection}{F-078: Apache 2.4.x < 2.4.64 Vulnerability (CVE-2025-23048)}{47}{section*.84}%
+\contentsline {subsubsection}{F-079: mod\_proxy\_http2 Assertion Failure Denial of Service}{47}{section*.85}%
+\contentsline {subsubsection}{F-080: Apache 2.4.x < 2.4.64 Vulnerability (CVE-2025-49812)}{47}{section*.86}%
+\contentsline {subsubsection}{F-081: Apache 2.4.x < 2.4.64 Vulnerability (CVE-2025-53020)}{48}{section*.87}%
+\contentsline {subsection}{\numberline {6.2.22}Apache < 2.4.49 Multiple Vulnerabilities}{48}{subsection.6.2.22}%
+\contentsline {subsubsection}{F-082: mod\_proxy Server-Side Request Forgery (SSRF)}{48}{section*.88}%
+\contentsline {subsection}{\numberline {6.2.23}Apache >= 2.4.17 < 2.4.49 mod\_http2}{48}{subsection.6.2.23}%
+\contentsline {subsubsection}{F-083: mod\_http2 Request Splitting and Cache Poisoning}{48}{section*.89}%
+\contentsline {subsection}{\numberline {6.2.24}Apache >= 2.4.30 < 2.4.49 mod\_proxy\_uwsgi}{49}{subsection.6.2.24}%
+\contentsline {subsubsection}{F-084: mod\_proxy\_uwsgi Out-of-Bounds Read Denial of Service}{49}{section*.90}%
+\contentsline {subsection}{\numberline {6.2.25}Apache Default Index Page}{49}{subsection.6.2.25}%
+\contentsline {subsubsection}{F-085: Apache Default Index Page}{49}{section*.91}%
+\contentsline {subsection}{\numberline {6.2.26}Apache ServerTokens Information Disclosure}{49}{subsection.6.2.26}%
+\contentsline {subsubsection}{F-086: Apache ServerTokens Information Disclosure}{49}{section*.92}%
+\contentsline {subsection}{\numberline {6.2.27}Web Server Error Page Information Disclosure}{50}{subsection.6.2.27}%
+\contentsline {subsubsection}{F-087: Web Server Error Page Information Disclosure}{50}{section*.93}%
+\contentsline {subsection}{\numberline {6.2.28}Web Server HTTP Header Information Disclosure}{50}{subsection.6.2.28}%
+\contentsline {subsubsection}{F-088: Web Server HTTP Header Information Disclosure}{50}{section*.94}%
+\contentsline {subsection}{\numberline {6.2.29}Linux Kernel Local Privilege Escalation}{51}{subsection.6.2.29}%
+\contentsline {subsubsection}{F-089: userns: also map extents in the reverse map to kernel IDs}{51}{section*.95}%
+\contentsline {chapter}{\numberline {7}Appendix}{52}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Overview}{52}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Exploiting several vulnerabilities}{52}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Identifying Potential Entry Points}{52}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Initial Access Through Local File Inclusion}{53}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}LFI-to-RCE Escalation Through Log Poisoning}{54}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Establishing a Reverse Shell}{55}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Post-Exploitation and Credential Discovery}{56}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Local Privilege Escalation}{58}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Root Privilege Escalation}{59}{subsection.7.2.7}%
